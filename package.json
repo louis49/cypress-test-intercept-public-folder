@@ -2,22 +2,28 @@
   "name": "cypress-test-tiny",
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
+  "type": "module",
   "scripts": {
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
-    "cypress:verify": "cypress verify",
-    "cypress:version": "cypress version",
-    "cypress:info": "cypress info",
-    "cypress:cache:list": "cypress cache list",
-    "list-videos": "ls -l cypress/videos"
+    "dev": "vite --mode development --host --port 8080",
+    "test:cy": "cypress open"
   },
   "keywords": [],
   "author": "Cypress-io",
   "license": "ISC",
-  "devDependencies": {
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vue": "^3.4.31",
+    "vuetify": "^3.6.11"
+  },
+  "devDependencies": {
+    "@cypress/vue": "^6.0.0",
+    "cypress": "^13.13.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vue-tsc": "^2.0.14"
   }
 }

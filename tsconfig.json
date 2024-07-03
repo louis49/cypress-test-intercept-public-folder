@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "types": ["vue-router"]
+    },
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "types": ["node", "vite/client", "vue-router", "cypress", "mocha", "@cypress/vue"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "./cypress.d.ts",
+    "cypress"
+  ],
+  "exclude": ["node_modules", "vite.config.ts", "dist", "cypress.config.ts", ],
+}
